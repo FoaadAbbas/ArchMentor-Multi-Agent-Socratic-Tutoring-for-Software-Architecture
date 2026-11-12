@@ -1,0 +1,2 @@
+# ArchMentor-Multi-Agent-Socratic-Tutoring-for-Software-Architecture
+ArchMentor is a multi-agent LLM platform designed for software engineering education.It analyzes system requirements,translates them into measurable graph-based architectures,and applies academic metrics like cohesionInstead of providing direct solutions,it uses Socratic mentoring to guide students to independently discover and resolve design flaws
