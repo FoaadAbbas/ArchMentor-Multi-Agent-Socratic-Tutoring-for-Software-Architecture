@@ -57,51 +57,55 @@ graph TD
     style A2 fill:#e8f5e9,stroke:#4caf50,stroke-width:2px
     style A3 fill:#fff3e0,stroke:#ff9800,stroke-width:2px
     style M fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px
+```
 
-🛠️ Tech Stack & Technologies
+## 🛠️ Tech Stack & Technologies
 
-    Language: Python 3.9+
+* **Language:** Python 3.9+
+* **AI/LLM:** Integrated with modern LLM APIs (e.g., Gemini, OpenAI, or local execution)
+* **Graph Modeling:** `NetworkX` (for modeling components as nodes and dependencies as edges)
+* **Metrics Engine:** Custom Python implementations of academic architectural cohesion metrics.
 
-    AI/LLM: Integrated with modern LLM APIs (e.g., Gemini, OpenAI, or local execution)
+---
 
-    Graph Modeling: NetworkX (for modeling components as nodes and dependencies as edges)
+## 🚀 Getting Started
 
-    Metrics Engine: Custom Python implementations of academic architectural cohesion metrics.
-
-🚀 Getting Started
-Prerequisites
-
+### Prerequisites
 Make sure you have Python installed and an API key for your chosen LLM provider.
-Installation
 
-    Clone the repository:
-    Bash
+### Installation
 
-    git clone [https://github.com/YourUsername/ArchMentor.git](https://github.com/YourUsername/ArchMentor.git)
-    cd ArchMentor
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/YourUsername/ArchMentor.git
+   cd ArchMentor
+   ```
 
-    Install dependencies:
-    Bash
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-    pip install -r requirements.txt
+3. **Configure Environment:**
+   Create a `.env` file in the root directory and add your API keys:
+   ```env
+   LLM_API_KEY=your_api_key_here
+   ```
 
-    Configure Environment:
-    Create a .env file in the root directory and add your API keys:
-    קטע קוד
+4. **Run the Tutor:**
+   ```bash
+   python main.py
+   ```
 
-    LLM_API_KEY=your_api_key_here
+---
 
-    Run the Tutor:
-    Bash
+## 💡 Example Socratic Interaction
 
-    python main.py
+> **System Metric:** *Module UserAuth has low Cohesion (Score: 0.3).* <br>
+> **Agent 3 (Mentor):** "I notice that your `UserAuth` component is handling both password encryption and sending marketing emails. Based on the Single Responsibility Principle, how might you restructure these tasks to make the system more cohesive?"
 
-💡 Example Socratic Interaction
+---
 
-    System Metric: Module UserAuth has low Cohesion (Score: 0.3).
+## 🎓 Academic Context
 
-    Agent 3 (Mentor): "I notice that your UserAuth component is handling both password encryption and sending marketing emails. Based on the Single Responsibility Principle, how might you restructure these tasks to make the system more cohesive?"
-
-🎓 Academic Context
-
-Developed as a B.Sc. Software Engineering final project at Ort Braude College of Engineering by Foaad Abbas. This project integrates academic research on software metrics with advanced AI agent orchestrations to create a scalable, educational tool for future engineers.
+Developed as a B.Sc. Software Engineering final project at **Ort Braude College of Engineering** by Foaad Abbas. This project integrates academic research on software metrics with advanced AI agent orchestrations to create a scalable, educational tool for future engineers.
